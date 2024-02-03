@@ -43,7 +43,7 @@ jobs:
 
             - run: npm run db:populate
             - run: npm run build
-            - run: npm test-e2e
+            - run: npm run test-e2e
 
             - name: Check types
               run: npx tsc
