@@ -83,7 +83,7 @@ The project uses Github Actions for CI/CD. It runs the tests and builds the type
     4. Run the migrations and Populate the database
 
         ```bash
-        npm run db:push
+        npm run db:generate
         npm run db:populate
         ```
 

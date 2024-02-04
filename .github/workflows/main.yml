@@ -30,7 +30,7 @@ jobs:
                   key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}-nextjs
 
             - name: Setup Prisma
-              run: npm run db:push
+              run: npm run db:generate
 
             - run: npm run db:populate
             - run: npm run build
@@ -74,7 +74,7 @@ jobs:
                   key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}-nextjs
 
             - name: Setup Prisma
-              run: npm run db:push
+              run: npm run db:generate
 
             - run: npm run db:populate
             - run: npm run test-unit
