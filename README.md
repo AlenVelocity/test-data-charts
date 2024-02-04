@@ -40,10 +40,8 @@ The project uses Github Actions for CI/CD. It runs the tests and builds the type
     ```
 
     #### Run using Docker
-
-    ##### Using Docker Compose
     
-    ##### Using Docker
+    ##### Docker
 
     1. Build the image
 
@@ -57,7 +55,7 @@ The project uses Github Actions for CI/CD. It runs the tests and builds the type
         docker run -p 3000:3000 -e DATABASE_URL="your_mongodb_url" chart-poc
         ```
     
-    #### Run using Docker Compose
+    #### Docker Compose
 
     1. Set the .env file
 
