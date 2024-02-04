@@ -48,6 +48,11 @@ const main = async () => {
                 }
             },
         )
+
+        if (data.length === 0) {
+            console.log('No new data to add')
+            return
+        }
         console.log('Adding', data.length, 'new data points')
 
         await db.data.createMany({
