@@ -15,15 +15,13 @@ suite('data router', async () => {
 
         const today = new Date()
         const tomorrow = new Date(today)
-        console.log('today', today)
         tomorrow.setDate(today.getDate() + 1)
-        console.log('tomorrow', tomorrow)
         const sevenDaysAgo = new Date(today)
         sevenDaysAgo.setDate(today.getDate() - 7)
 
         const input: Input = {
             startDate: sevenDaysAgo.toISOString().split('T')[0],
-            endDate: tomorrow.toDateString(),
+            endDate: tomorrow.toISOString().split('T')[0],
         }
         const result = await caller.data.daterange(input)
 
