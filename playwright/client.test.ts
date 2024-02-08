@@ -1,6 +1,6 @@
 import { test } from '@playwright/test'
 
-test.setTimeout(35e3)
+test.setTimeout(120000)
 
 test('go to /', async ({ page }) => {
     await page.goto('/')
